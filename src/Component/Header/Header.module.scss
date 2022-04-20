@@ -1,0 +1,21 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/media.scss";
+
+.header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(210, 44, 113);
+  height: 50px;
+}
+
+.item{
+  padding: 0 20px;
+  margin-right: 3%;  
+  font-size: $textSpaceLg;
+  color: $white;
+  font-family: sans-serif;
+}
+.mobile{
+    display: none;
+}

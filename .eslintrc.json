@@ -1,0 +1,69 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react",
+    "prettier",
+    "import"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-debugger": "off",
+    "no-console": 0,
+    "react/require-default-props": "off",
+    "react/function-component-definition": [2, {
+      "namedComponents": "arrow-function",
+      "unnamedComponents": "arrow-function"
+    }],
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-expressions": "off",
+    "camelcase": "off",
+    "no-param-reassign": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/no-unstable-nested-components": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "prefer-destructuring": "off",
+    "no-nested-ternary": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "no-return-await": "off",
+    "class-methods-use-this": "off",
+    "no-shadow": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-plusplus": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/button-has-type": "off"
+  }
+}

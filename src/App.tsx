@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import { AuthRoute } from './Component/AuthRoute/AuthRoute';
+import { Layout } from './Component/Layout/Layout';
+import { Authentication } from './Pages/Authentication/Authentication';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/" render={() => <Redirect to="/profile" />} />
+      <AuthRoute
+        type="unauthorized"
+        path={['/login', '/registration', '/recovery']}
+        component={Authentication}
+      />
+      <AuthRoute type="authorized" path={['/profile']} component={Layout} />
+    </Switch>
   );
-}
-
-export default App;
+};

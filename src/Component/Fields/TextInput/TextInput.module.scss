@@ -1,0 +1,50 @@
+.TextInputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  
+    .TextInput {
+      height: 52px;
+      width: 380px !important;
+      outline: none;
+      font-weight: 500;
+  
+      fieldset {
+        border-radius: 10px;
+        border: 1px solid #3f4a56 !important;
+      }
+
+      .TextInputInput {
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+  
+        input{
+          &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px white inset;
+            -webkit-text-fill-color: #000;
+          }
+        }
+      }
+
+      input {
+        background: white;
+        font-size: 16px !important;
+      }
+    }
+
+    .eyeIcon{
+      position:absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+  
+    .withError {
+      fieldset {
+        border: 1px solid red !important;
+      }
+    }
+  }
+  
+  

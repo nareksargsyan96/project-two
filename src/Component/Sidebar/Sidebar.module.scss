@@ -1,0 +1,9 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/media.scss";
+
+.sidebar{
+    grid-area: sidebar;
+    margin: 20px 0;
+    background-color:  rgb(210, 44, 113);
+    border-radius: 20px 0 0 20px;
+}

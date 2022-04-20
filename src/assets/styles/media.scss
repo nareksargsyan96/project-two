@@ -1,0 +1,26 @@
+@media only screen and (max-width : 1200px) {
+    
+}
+
+@media only screen and (max-width : 991px) {
+    .desktop_header{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .sidebar{
+        display: none !important;
+    }
+    .filters{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}

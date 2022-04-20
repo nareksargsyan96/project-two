@@ -1,0 +1,22 @@
+.registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reg__Input_text{
+    margin-bottom: 30px;
+}
+.reg__Input_password{
+   display: flex;
+   margin-bottom: 30px;
+      
+}
+.reg__btn{
+  cursor: pointer;
+  border:none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgb(201, 201, 201);  
+  color: rgb(109, 108, 108);
+}

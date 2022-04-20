@@ -1,0 +1,17 @@
+@import "../../../../assets/styles/variables.scss";
+
+.footerList{
+    display: flex;
+    color: $white;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .boxList{
+        margin: 20px 0;
+    }
+    .social{
+        margin-top: 1%;
+    }
+}
